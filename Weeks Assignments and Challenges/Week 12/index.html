@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        form:first-of-type {
+
+            gap: 10px;
+        }
+        form {
+            display: grid;
+            margin-inline:auto ;
+            text-align: center;
+        }
+        form input,
+        form:last-of-type select{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgba(128, 128, 128, 0.603);
+            width: 50%;
+            box-sizing: border-box;
+            margin-inline: auto;
+        }
+        form:last-of-type input[type="submit"] {
+            color: white;
+            background-color:darkcyan;
+            border: none;
+        }
+        .box{
+            color: white;
+            margin-block: 10px;
+            background-color: red;
+            width: -moz-fit-content;
+            width: fit-content;
+            padding: 10px 60px;
+            flex-basis: 30%;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .results{
+            display: flex;
+            gap: 10px;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+    </style>
+</head>
+
+<body style="background-color: aquamarine">
+    <!-- A001 -->
+    <div id="elzero" class="element" name="js">JavaScript</div>
+    <!-- A002 -->
+    <div id="a2Images">
+        <div>
+            <img src="#" alt="" />
+        </div>
+        <div>
+            <img src="#" alt="" />
+        </div>
+        <div>
+            <img src="#" alt="" />
+        </div>
+        <div>
+            <img src="#" alt="" />
+        </div>
+        <div>
+            <img src="#" alt="" />
+        </div>
+        <div>
+            <img src="#" alt="" />
+        </div>
+        <div>
+            <img src="#" alt="" />
+        </div>
+        <div>
+            <img src="#" alt="" />
+        </div>
+        <div>
+            <img src="#" alt="" />
+        </div>
+        <div>
+            <img src="#" alt="" />
+        </div>
+    </div>
+    <!-- A003 -->
+    <form action="">
+        <input type="number" name="dollar" placeholder="USD Dollar" />
+        <div class="result">{0} USD Dollar = {0} Egyptian Pound</div>
+    </form>
+    <!-- A004 -->
+    <div class="one" title="two">Two</div>
+    <div class="two" title="one">One</div>
+    <!-- A005 -->
+    <div id="a5Images">
+        <img src="#" alt="One" />
+        <img src="#" />
+        <img src="#" alt="Three" />
+        <img src="#" />
+        <img src="#" />
+    </div>
+    <!-- A006 -->
+    <form action="">
+        <input type="number" name="elements" class="input" placeholder="Number Of Elements" /><br>
+        <input type="text" name="texts" class="input" placeholder="Elements Text" /><br>
+        <select name="type" class="input">
+            <option value="Div">Div</option>
+            <option value="Section">Section</option>
+        </select><br>
+        <input type="submit" name="create" value="Create" />
+        <div class="results">
+        </div>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
