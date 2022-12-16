@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Learn JavaScript</title>
+		<script>
+			// Code One
+            /*gets the element that has an id el then change the color to red
+            will not work because the element isn't crated yet*/
+			document.getElementById("el").style.color = "red";
+		</script>
+		<script>
+			// Code Two
+            /* gets the element that has an id el then change the color to red after loading*/
+			window.onload = function () {
+				document.getElementById("el").style.color = "red";
+			};
+		</script>
+	</head>
+	<body>
+		<h1 id="el">Page Title</h1>
+		<script>
+			// Code Three
+            /* gets the element that has an id el then change the color to red after it's created*/
+			document.getElementById("el").style.color = "red";
+		</script>
+	</body>
+</html>
