@@ -1,0 +1,36 @@
+
+[{
+    "id":1,
+    "writer":"Ahmed",
+    "type":"Gaming",
+    "title":"nvidia rtx",
+    "contents":["content1","content2","content3"]
+},
+{
+    "id":2,
+    "writer":"Mohamed",
+    "type":"Nature",
+    "title":"Desert",
+    "contents":["content1","content2","content3"]
+},
+{
+    "id":3,
+    "writer":"Rami",
+    "type":"Comics",
+    "title":"Fantastic Four",
+    "contents":["content1","content2","content3"]
+},
+{
+    "id":4,
+    "writer":"Mahmoud",
+    "type":"Anime",
+    "title":"Hunter X Hunter",
+    "contents":["content1","content2","content3"]
+},
+{
+    "id":5,
+    "writer":"Kingo",
+    "type":"Programming",
+    "title":"JavaScript",
+    "contents":["content1","content2","content3"]
+}]

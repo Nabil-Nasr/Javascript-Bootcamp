@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pop-up {
+            min-height: 150px;
+            min-width: 500px;
+            max-width: 100%;
+            background-color: #eee;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: grid;
+            text-align: center;
+            align-content: center;
+            gap: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            border: 1px solid #ccc;
+        }
+        .pop-up > * {
+            margin:0;
+        }
+        .pop-up > button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(50%,-50%);
+            color: white;
+            border: 1px solid currentColor;
+            background-color: red;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 11px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body> 
+    <script src="main.js"></script>
+</body>
+</html>
