@@ -74,7 +74,7 @@ function showDetails(...details) {
         for (let i = 0; i < 3; i++) {
             typeof details[i] === "string" ? name = details[i] : typeof details[i] === "number" ? age = details[i] : typeof details[i] === "boolean" ? status = details[i] : i = 3;
         }
-        status !== undefined && name !== undefined && age !== undefined ? status ? console.log(`Hello ${name}, Your Age Is ${age}, You Are Available For Hire`) : console.log(`Hello ${name}, Your Age Is ${age}, You Are Not Available For Hire`) : console.log("Wrong Details Entry");
+        status !== undefined && name !== undefined && age !== undefined ? console.log(`Hello ${name}, Your Age Is ${age}, You Are${status ? " " : " Not "}Available For Hire`) : console.log("Wrong Details Entry");
     }
     else {
         console.log("Wrong number of details");

@@ -8,7 +8,7 @@ let d = 2.4;
 console.log(Math.round(Math.min(a, b, c, d)));
 
 // 2
-//using a and b only one time for everyone
+//using a and d only one time for everyone
 console.log(Math.pow(a, Math.trunc(d)));//10000
 
 //  3

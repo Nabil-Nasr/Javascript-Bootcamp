@@ -3,6 +3,9 @@
 let st = "Elzero Web School";
 
 //  1
+if (st[st.indexOf("W")].toLowerCase() === "w") console.log("Good");
+
+// or
 if (typeof st === typeof "w") console.log("Good");
 
 //  2
