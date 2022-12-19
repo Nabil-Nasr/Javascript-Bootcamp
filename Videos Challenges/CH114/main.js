@@ -18,7 +18,7 @@ if (localStorage.tasks) {
 
 		createTaskContent(task, taskObject.title, taskObject.id);
 	});
-}
+} 
 
 //  adding new task
 add.addEventListener("click", function (eve) {
@@ -48,6 +48,13 @@ function valueNotExists(inputValue){
 			let message = document.createElement(`div`);
 			message.className = "message";
 
+			// exits the message if we clicked out of it's container
+			let exit=document.createElement(`div`);
+			exit.onclick=function(){
+				message.remove()
+			}
+			message.append(exit)
+			
 			let messageContainer = document.createElement(`div`);
 
 			let text = document.createElement(`div`);
@@ -55,9 +62,10 @@ function valueNotExists(inputValue){
 			messageContainer.append(text);
 			message.append(messageContainer);
 			tasksDiv.after(message);
+
 			setTimeout(function(){
 				message.remove();
-			},1000)
+			},1500)
 			return false;
 		}
 	}
